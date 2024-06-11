@@ -27,9 +27,9 @@ Tests are located in a "tests" folder in a class "tests_employee.py".
         Case 2: When the sobrenome method receives only a single name without a last name, it should return the message "There isn't Last Name, please insert a Last Name!". This test checks if the name "Test" returns the expected message.
 
     Bonus Calculation:
-        Case 1: When the calcular_bonus method receives a salary of 9999.90, it should return 999.99. This test verifies this specific calculation.
+        Case 1: When the calcular_bonus method receives a salary of 9999.99, it should return 999.99. This test verifies this specific calculation.
         Case 2: When the calcular_bonus method receives a salary of 10001, it should return 0. This test checks if the upper limit salary returns 0.
-        Case 3: When the calcular_bonus method receives a salary of 10000.10, it should return 0. This test verifies if the salary slightly above the limit returns 0.
+        Case 3: When the calcular_bonus method receives a salary of 10000.01, it should return 0. This test verifies if the salary slightly above the limit returns 0.
         Case 4: When the calcular_bonus method receives a negative salary, it should return the message "Invalid salary, please insert a valid salary". This test is marked with skip and checks if the negative salary returns the expected message.
 
 ## Test Execution
