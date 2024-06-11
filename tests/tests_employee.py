@@ -25,8 +25,8 @@ class TestEmployee:
         assert employee.sobrenome() == "There isn't Last Name, please insert a Last Name!"
     
     @mark.bonus_calculation
-    def test_when_receive_a_salary_equal_9999_90_must_return_999_99(self):
-        employee = Funcionario('Test Fulano', '01/01/2000', 9999.90)
+    def test_when_receive_a_salary_equal_9999_99_must_return_999_99(self):
+        employee = Funcionario('Test Fulano', '01/01/2000', 9999.99)
         assert employee.calcular_bonus() == 999.99
     
     @mark.bonus_calculation
@@ -36,7 +36,7 @@ class TestEmployee:
 
     @mark.bonus_calculation    
     def test_when_receive_salary_equal_10000_01_must_return_0(self):
-        employee = Funcionario('Test Fulano', '01/01/2000', 10000.10)
+        employee = Funcionario('Test Fulano', '01/01/2000', 10000.01)
         assert  employee.calcular_bonus() == 0
     
     @mark.bonus_calculation
